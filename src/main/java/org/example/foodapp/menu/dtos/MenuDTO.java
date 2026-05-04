@@ -3,6 +3,7 @@ package org.example.foodapp.menu.dtos;
 
 import com.stripe.model.Review;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.NoArgsConstructor;
@@ -17,6 +18,7 @@ public class MenuDTO {
 
     private String id;
 
+    @NotBlank
     private String name;
 
     private String description;
