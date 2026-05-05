@@ -12,6 +12,10 @@ import org.example.foodapp.role.entity.Role;
 import java.time.LocalDateTime;
 import java.util.List;
 
+import org.example.foodapp.order.entity.Order;
+import org.example.foodapp.cart.entity.Cart;
+
+
 
 @Entity
 @Data
@@ -48,7 +52,7 @@ public class User {
     )
     private List<Role> roles;
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "user_id", cascade = CascadeType.ALL)
     private List<Order> orders;
 
     @OneToMany(mappedBy = "user",cascade = CascadeType.ALL)

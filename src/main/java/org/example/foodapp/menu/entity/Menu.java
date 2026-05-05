@@ -6,6 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.NoArgsConstructor;
 import org.example.foodapp.category.entity.Category;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.math.BigInteger;
 import java.util.List;
@@ -27,6 +28,10 @@ public class Menu {
     private BigInteger price;
 
     private String imageUrl;
+
+
+
+
 @ManyToOne(fetch = FetchType.EAGER)
 @JoinColumn(name = "category_id")
     private Category category;
