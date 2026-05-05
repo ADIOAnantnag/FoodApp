@@ -14,6 +14,7 @@ import java.util.List;
 
 import org.example.foodapp.order.entity.Order;
 import org.example.foodapp.cart.entity.Cart;
+import org.example.foodapp.role.entity.Role;
 
 
 
